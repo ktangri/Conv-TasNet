@@ -8,9 +8,9 @@
 # * If you jsut have origin sphere format wsj0 , modify `wsj0_origin` to your path and
 # modify `wsj0_wav` to path that put output wav format wsj0, then read and run stage 1 part.
 # After that, modify `data` and run from stage 2.
-wsj0_origin=/home/ktxu/workspace/data/CSR-I-WSJ0-LDC93S6A
-wsj0_wav=/home/ktxu/workspace/data/wsj0-wav/wsj0
-data=/home/ktxu/workspace/data/wsj-mix/2speakers/wav8k/min/
+wsj0_origin=/nobackup1c/users/mit-6345/6345_data/wsj/wsj0/
+wsj0_wav=/home/ktangri/superUrop/tasnet/Conv-TasNet/data/wsj0-wav
+data=/home/ktangri/superUrop/tasnet/Conv-TasNet/data/wsj0-mix/2speakers/wav8k/min
 stage=1  # Modify this to control to start from which stage
 # -- END
 
@@ -53,8 +53,8 @@ lr=1e-3
 momentum=0
 l2=0
 # save and visualize
-checkpoint=0
-continue_from=""
+checkpoint=1
+continue_from="/home/ktangri/superUrop/tasnet/Conv-TasNet/egs/wsj0/exp/train_r8000_N256_L20_B256_H512_P3_X8_R4_C2_gLN_causal0_relu_epoch100_half1_norm5_bs3_worker4_adam_lr1e-3_mmt0_l20_tr/epoch99.pth.tar"
 print_freq=10
 visdom=0
 visdom_epoch=0
